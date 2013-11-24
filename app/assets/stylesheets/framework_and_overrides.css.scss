@@ -13,3 +13,40 @@
 
 // And finally bootswatch style itself
 @import "bootswatch/simplex/bootswatch";
+
+
+/* Home */
+
+/* change the URL to a picture of your choice - the higher quality the better! */
+.business-header {
+height: 400px;
+background: url(http://img.photobucket.com/albums/v234/marfue179/fondoodoctores_zps77f1690f.jpg) center center no-repeat;
+background-size: cover;
+}
+
+/* adjust the color and text shadow to optimize legibility once you have an image set - you can also change the vertical positioning if desired */
+.tagline {
+color: #fff;
+text-shadow: 0 0 10px #000;
+}
+
+
+/* footer */
+
+footer {
+
+   padding-top: 50px;
+  
+background: rgb(249,252,247); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(249,252,247,1) 0%, rgba(245,249,240,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(249,252,247,1)), color-stop(100%,rgba(245,249,240,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, rgba(249,252,247,1) 0%,rgba(245,249,240,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, rgba(249,252,247,1) 0%,rgba(245,249,240,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, rgba(249,252,247,1) 0%,rgba(245,249,240,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom, rgba(249,252,247,1) 0%,rgba(245,249,240,1) 100%); /* W3C */
+
+  
+ 
+
+  
+}

@@ -17,6 +17,7 @@ gem 'rolify'
 gem 'simple_form'
 gem 'bootswatch-rails'
 gem 'bootstrap-sass-extras'
+gem 'carrierwave'
 
 group :development do
   gem 'better_errors'

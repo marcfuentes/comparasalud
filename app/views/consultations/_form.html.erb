@@ -1,16 +1,14 @@
-<%= simple_form_for(@consultation) do |f| %>
-  <%= f.error_notification %>
-
-  <div class="form-inputs">
-    <%= f.input :provider %>
-    <%= f.input :total_price %>
-    <%= f.input :pay_price %>
-    <%= f.input :bond %>
-    <%= f.input :address %>
-    <%= f.input :phone %>
-  </div>
-
+<%= simple_form_for @consultation, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :provider %>
+  <%= f.input :total_price %>
+  <%= f.input :pay_price %>
+  <%= f.input :bond %>
+  <%= f.input :address %>
+  <%= f.input :phone %>
+  <%= f.input :logo %>
   <div class="form-actions">
-    <%= f.button :submit %>
+    <%= f.button :submit, :class => 'btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                consultations_path, :class => 'btn' %>
   </div>
 <% end %>

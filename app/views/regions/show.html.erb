@@ -5,6 +5,10 @@
   <%= @region.name %>
 </p>
 
+ <% @region.comunes.each do |comune| %>
+ <h4><%= comune.name %></h4>
+ <% end %>
+
 
 <%= link_to 'Edit', edit_region_path(@region) %> |
 <%= link_to 'Back', regions_path %>

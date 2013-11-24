@@ -1,34 +1,32 @@
+<div class="container">
 <%- model_class = Consultation -%>
 <div class="page-header">
   <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
 </div>
+</div>
 <table class="table table-striped">
   <thead>
     <tr>
-      <th><%= model_class.human_attribute_name(:id) %></th>
-      <th><%= model_class.human_attribute_name(:provider) %></th>
-      <th><%= model_class.human_attribute_name(:total_price) %></th>
-      <th><%= model_class.human_attribute_name(:pay_price) %></th>
-      <th><%= model_class.human_attribute_name(:bond) %></th>
-      <th><%= model_class.human_attribute_name(:address) %></th>
-      <th><%= model_class.human_attribute_name(:phone) %></th>
+      
+      <th><%= model_class.human_attribute_name(:proveedor) %></th>
+      <th><%= model_class.human_attribute_name(:Precio_Total) %></th>
+      <th><%= model_class.human_attribute_name(:Precio_a_pagar)%></th>
+      <th><%= model_class.human_attribute_name(:Direccion) %></th>
       <th><%= model_class.human_attribute_name(:logo) %></th>
-      <th><%= model_class.human_attribute_name(:created_at) %></th>
+      
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
   </thead>
   <tbody>
     <% @consultations.each do |consultation| %>
       <tr>
-        <td><%= link_to consultation.id, consultation_path(consultation) %></td>
-        <td><%= consultation.provider %></td>
+        
+        <td><%= link_to consultation.provider, consultation_path(consultation) %></td>
         <td><%= consultation.total_price %></td>
-        <td><%= consultation.pay_price %></td>
-        <td><%= consultation.bond %></td>
-        <td><%= consultation.address %></td>
-        <td><%= consultation.phone %></td>
+        <td><%= consultation.pay_price %></td> 
+        <td><%= consultation.address %></td>  
         <td><%= consultation.logo %></td>
-        <td><%=l consultation.created_at %></td>
+       
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
                       edit_consultation_path(consultation), :class => 'btn btn-mini' %>

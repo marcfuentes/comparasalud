@@ -1,11 +1,17 @@
 <%= simple_form_for @consultation, :html => { :class => 'form-horizontal' } do |f| %>
   <%= f.input :provider %>
+  <div class="form-inputs">
+    <%= f.input :comune_id %>
+  </div>
   <%= f.input :total_price %>
   <%= f.input :pay_price %>
   <%= f.input :bond %>
   <%= f.input :address %>
   <%= f.input :phone %>
   <%= f.input :logo %>
+  
+    <%= f.input :consultation_type_id %>
+ 
   <div class="form-actions">
     <%= f.button :submit, :class => 'btn-primary' %>
     <%= link_to t('.cancel', :default => t("helpers.links.cancel")),

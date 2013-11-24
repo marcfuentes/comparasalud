@@ -5,6 +5,9 @@
   <%= @comune.name %>
 </p>
 
+ <% @comune.consultations.each do |consultation| %>
+ <h4><%= consultation.provider %></h4>
+ <% end %>
 
 <%= link_to 'Edit', edit_comune_path(@comune) %> |
 <%= link_to 'Back', comunes_path %>

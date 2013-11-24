@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Provider:</b>
+  <%= @consultation.provider %>
+</p>
+
+<p>
+  <b>Total price:</b>
+  <%= @consultation.total_price %>
+</p>
+
+<p>
+  <b>Pay price:</b>
+  <%= @consultation.pay_price %>
+</p>
+
+<p>
+  <b>Bond:</b>
+  <%= @consultation.bond %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @consultation.address %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%= @consultation.phone %>
+</p>
+
+
+<%= link_to 'Edit', edit_consultation_path(@consultation) %> |
+<%= link_to 'Back', consultations_path %>
